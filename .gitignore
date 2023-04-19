@@ -14,3 +14,9 @@ node_modules
 
 # .DS_Store is only for Mac users
 **/.DS_Store
+
+# Adding the gitgnore file
+.gitgnore
+
+# we want to make sure the pnpm-lock.yaml is ignored
+pnpm-lock.yaml
