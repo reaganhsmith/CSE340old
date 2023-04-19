@@ -1,6 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;800&display=swap');
+
 /******* Change Box Model ***************/
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
+
+:root{
+  --main-font: 'Mukta', sans-serif;
+  --main-color: #b5d3e9;
+  --dark-color: #272626;
+  --third-color: #0b516f;
+
+}
+
+/*----------- HEADER SECTION -----------*/
+
+.siteName a{
+  font-size: 3rem;
+  text-decoration: none;
+  font-family: var(--main-font);
+  color: var(--dark-color);
+  font-weight: 800;
+}
+
+#tools a{
+  text-decoration: none;
+  font-family: var(--main-font);
+  color: var(--dark-color);
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+#top-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8rem;
+}
+
+a:hover, #tools a:hover{
+  color: var(--third-color);
+  text-decoration: underline;
+}
+
+/*----------- NAVIGATION SECTION -----------*/
+
+nav{
+  background-color: var(--main-color);
+  color: var(--dark-color);
+  padding: .8rem;
+}
+
+nav ul{
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  font-family: var(--main-font);
+  font-weight: 200;
+  display: flex;
+  font-size: 1.5rem;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+nav ul li:hover{
+  color: var(--third-color);
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+/*----------- MAIN SECTION OF THE PAGE -----------*/
+
+h1, h2, h3{
+  font-family: var(--main-font);
+  color: var(--dark-color);
+  font-weight: 800;
+}
+
+h1{
+  font-size: 1.8rem;
+}
+
+/* ---- Call to action ----*/
+.cta{
+  position: relative;
+}
+
+.ctaBox{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.814);
+  top: -20px;
+  left: 1px;
+  padding: 1rem;
+}
+
+.ctaBox h2{
+  color: var(--dark-color);
+}
+
+.ctaBox ul{
+  color: var(--dark-color);
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.ctaBox button{
+  background-color: var(--main-color);
+  color: var(--dark-color);
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem; 
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+}
+
+button:hover{
+  background-color: var(--third-color);
+  color: white;
+}
+
+.cta img{
+  width: 100%;
+}
+
