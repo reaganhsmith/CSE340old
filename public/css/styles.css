@@ -23,6 +23,7 @@
   font-family: var(--main-font);
   color: var(--dark-color);
   font-weight: 800;
+  margin-left: 2rem;
 }
 
 #tools a{
@@ -80,6 +81,7 @@ h1, h2, h3{
 
 h1{
   font-size: 1.8rem;
+  margin-left: 2rem;
 }
 
 /* ---- Call to action ----*/
@@ -155,6 +157,10 @@ h3{
 
 }
 
+.upgradeSection h3{
+margin-left: 2rem;
+}
+
 
 .upgrade{
   display: flex;
@@ -167,7 +173,7 @@ h3{
   background-color: var(--main-color);
   margin: 1rem;
   border: solid 1px var(--third-color);
-  width: 50%;
+  width: 200px;
   height: 150px;
   display: flex;
   justify-content: center;
@@ -187,4 +193,53 @@ h3{
 .upgrade a:hover{
   color: var(--dark-color);
   text-decoration: none;
+}
+
+/*----FOOTER----*/
+.copyright{
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 900px) {
+  html{
+    background-color: var(--main-color);
+    background: url('/images/site/checkerboard.jpg') repeat;
+    background-size: 30%;
+  }
+
+  body{
+    background-color: white;
+    border-radius: 15px;
+    border: solid 4px var(--main-color);
+    margin: 4rem;
+  }
+
+  nav{
+    margin: 1rem;
+  }
+
+  .bottomhalf {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 100%;
+  }
+  
+  .upgrades{
+    grid-row: 1 / span 1;
+  }
+  
+  .reviews {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+  }
+
+  .ctaBox{
+    left: 30px;
+  }
+
+  #top-header{
+    gap: 60%;
+  }
+
+
 }
