@@ -44,6 +44,7 @@
 a:hover, #tools a:hover{
   color: var(--third-color);
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /*----------- NAVIGATION SECTION -----------*/
@@ -70,6 +71,7 @@ nav ul li:hover{
   color: var(--third-color);
   font-weight: 800;
   font-size: 1.8rem;
+  cursor: pointer;
 }
 /*----------- MAIN SECTION OF THE PAGE -----------*/
 
@@ -122,6 +124,7 @@ h1{
 button:hover{
   background-color: var(--third-color);
   color: white;
+  cursor: pointer;
 }
 
 .cta img{
@@ -193,6 +196,7 @@ margin-left: 2rem;
 .upgrade a:hover{
   color: var(--dark-color);
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*----FOOTER----*/
@@ -222,6 +226,7 @@ margin-left: 2rem;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-rows: 100%;
+    gap: 1rem;
   }
   
   .upgrades{
@@ -241,5 +246,16 @@ margin-left: 2rem;
     gap: 60%;
   }
 
+  .cta img{
+    width: 80%;
+  }
+
+  .reviews h3{
+    margin-top: 1rem;
+  }
+
+  .reviews li {
+    font-size: 32px;
+  }
 
 }
