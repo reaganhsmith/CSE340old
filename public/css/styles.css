@@ -247,7 +247,10 @@ margin-left: 2rem;
   }
 
   .cta img{
-    width: 80%;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .reviews h3{
@@ -257,5 +260,29 @@ margin-left: 2rem;
   .reviews li {
     font-size: 32px;
   }
+  .ctaBox{
+    top: -20px;
+    left: 5rem;
+  }
+  
+  .ctaBox h2{
+    font-size: 2rem;
+    
+  }
+  
+    .ctaBox ul{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.5rem;
+  }
+    
+    .ctaBox button{
+      font-size:1rem;
+      }
+
+      h1{
+        font-size:2.5rem;
+      }
 
 }
