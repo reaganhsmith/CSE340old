@@ -62,4 +62,11 @@ VALUES ('custom'),
 
 
 
-	
+
+
+-- Updated the inventory files so that the have /vehicles in them 
+UPDATE 
+	inventory 
+SET 
+	inv_image = REPLACE(inv_image, 'ges/', 'ges/vehicles/'),
+	inv_thumbnail = REPLACE(inv_thumbnail,'ges/', 'ges/vehicles/');
